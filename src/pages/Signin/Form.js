@@ -17,19 +17,8 @@ const Form = () => {
   const { FullName, email, phoneNumber, address, password, confirmpassword } =
     setFormFields;
 
-  const handlesubmit = async (event) => {
+  const handlesubmit =  (event) => {
     event.preventDefault();
-
-    if (passowrd != confirmpassword) {
-      alert("your password do not match");
-      return;
-    }
-
-    try {
-
-    } catch () {
-      
-    }
   };
 
   const handleChange = (event) => {

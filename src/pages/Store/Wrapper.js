@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Wrapper as Container } from "./StoreComponents.styled";
 import PetCard from "../../components/PetCard";
 import { petDeets } from "../../dummy";
 import { Grid, List } from "../../components/icons";
+import axios from "axios";
 
 const Wrapper = () => {
+  // const [pets, setPets] = useState([]);
+
+  // const getPets = async () => {
+  //   const response = await axios.get(
+  //     `https://petstore.swagger.io/v2/pet/findByStatus?status=available`
+  //   );
+  //   const result = response.data;
+  //   console.log(result);
+  //   setPets(result.slice(0, 50));
+  // };
+
+  // useEffect(() => {
+  //   getPets();
+  // }, []);
+
   return (
     <Container>
       <div className="header">

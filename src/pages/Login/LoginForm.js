@@ -1,12 +1,8 @@
-import React, { UseState } from "react";
-import { useEffect } from "react";
-import { getRedirectResult } from "firebase/auth";
+import React, { useState } from "react";
 
 // import { auth, signInWithGooglePopup, createUserDocumentFromAuth, signInWithGoogleRedirect} from "./../utils/firebase/firebase.utils";
 
 import "./LoginForm.css";
-
-import { useState } from "react";
 
 export const LoginForm = () => {
   // useEffect(async () => {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar as Nav } from "./Component.styled";
 import { SearchIcon, Cart, User } from "./icons";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // const [ searchField, setSearchField ] = useState( "" );
@@ -11,10 +12,17 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="left">
-        <img
-          src="https://github.com/Moyeenwaz/pet-store-images/blob/main/pet-images/paw-print.png?raw=true"
-          alt="paw-print"
-        />
+        <Link
+          to="/"
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <img
+            src="https://github.com/Moyeenwaz/pet-store-images/blob/main/pet-images/paw-print.png?raw=true"
+            alt="paw-print"
+          />
+        </Link>
         <span>Pettzi</span>
       </div>
       <div className="middle">
@@ -23,7 +31,14 @@ const Navbar = () => {
       </div>
       <div className="right">
         <div className="nav-icon">
-          <Cart />
+          <Link
+            to="/cart"
+            style={{
+              textDecoration: "none",
+            }}
+          >
+            <Cart />
+          </Link>
           <span children="Your Cart" />
         </div>
         <div className="nav-icon">
@@ -31,7 +46,14 @@ const Navbar = () => {
           <span children="Account" />
         </div>
         <div className="demacation"></div>
-        <button>Sign in</button>
+        <Link
+          to="/signin"
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <button>Sign in</button>
+        </Link>
       </div>
     </Nav>
   );

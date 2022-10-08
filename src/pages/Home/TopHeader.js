@@ -1,5 +1,6 @@
 import React from "react";
 import { HeaderContainer, HeaderText } from "./HomeComponents.styled";
+import { Link } from "react-router-dom";
 
 const TopHeader = () => {
   return (
@@ -9,7 +10,14 @@ const TopHeader = () => {
         alt=""
       />
       <HeaderText>GET A COMPANION TODAY</HeaderText>
-      <button>Shop Now</button>
+      <Link
+        to="/shop"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        <button>Shop Now</button>
+      </Link>
     </HeaderContainer>
   );
 };

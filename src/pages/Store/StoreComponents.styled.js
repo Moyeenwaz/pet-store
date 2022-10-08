@@ -65,7 +65,7 @@ export const Wrapper = styled.div`
   }
   .pagination {
     position: absolute;
-    bottom: 45px;
+    bottom: 20px;
     right: 50%;
     transform: translateX(50%);
     span {
